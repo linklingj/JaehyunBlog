@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+nav a#nav-selected {
+    background-color: #fff;
+    color: #444;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.box-container-r {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.box-container-c {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+img {
+    max-width: 100%;
+    display : inline-block;
+    margin: 20px;
+    vertical-align: left;
+}
+
+img#profile {
+    width: 200px;
+    height: auto;
+}
+
+#post-head {
+    background-color: #999;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: end;
+}
+
+#post-head h2 {
+    margin-bottom: 40px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+input[type="text"], textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: none;
+}
+
+input[type="file"] {
+	margin-top: 10px;
+}
+
+#preview {
+	margin-top: 10px;
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    img {
+        margin: 20px 0 0;
+    }
+}

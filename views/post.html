@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>재현 개발블로그</title>
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>재현이의 개발 블로그</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="post.html" id="nav-selected">Post</a>
+        </nav>
+        <div class="container">
+            <h1>새 글 작성</h1>
+            <form>
+                <label for="title">제목:</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="photo">사진 선택:</label><br>
+			    <input type="file" id="photo" name="photo"><br>
+			    <img id="preview" src="#" alt="Selected photo" style="display:none;"><br>
+                <label for="content">내용:</label><br>
+                <textarea id="content" name="content"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+    <script src="../app/post.js"></script>
+</html>
